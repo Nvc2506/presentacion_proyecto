@@ -8,25 +8,27 @@
   <link rel="stylesheet" href="css/sytle.css">
   <link rel="icon" type="image/png" sizes="192x192" href="imagen/corazon .png">
 
-  </div>
-
 </head>
 
 <body>
 
   <nav>
-    <div class="nav-logo">RAS<span>●</span></div>
+    <div class="nav-logo">
+      <img src="imagen/logo-ras.png" alt="Logo RAS" class="nav-logo-img">
+      RAS <span>●</span>
+    </div>
     <ul class="nav-links">
       <li><a href="#intro">Introducción</a></li>
       <li><a href="#problema">Problema</a></li>
       <li><a href="#pregunta">Pregunta</a></li>
       <li><a href="#obj-general-sec">Objetivo General</a></li>
-      <li><a href="#obj-custom-sec">Objetivos Especificos</a>
-      <li><a href="#diagramas">Diagramas</a></li>
-      <li><a href="#mapa-conceptual-sec">Modelos</a></li>
+      <li><a href="#obj-custom-sec">Objetivos Especificos</a></li>
+      <li><a href="#modelos-bd-sec">Modelos</a></li>
       <li><a href="#arquitectura">Arquitectura</a></li>
       <li><a href="#metodologia">Metodología Scrum</a></li>
     </ul>
+    <a class="nav-figma" href="https://www.figma.com/site/sWSKYAG7FcVWKQzF6HvJ5q/Sin-título?node-id=0-1&p=f&t=AjfuWoU9uYDr4PJ5-0"
+      target="_blank" rel="noopener">Ver Prototipo ↗</a>
   </nav>
 
   <div class="hero">
@@ -190,36 +192,60 @@
     </div>
   </section>
 
-
-  </div>
-
-
   <span class="sep"></span>
 
-  <section id="diagramas">
-    <div class="section-eyebrow">07 · Diagramas UML y Base de Datos</div>
-    <h2 class="section-title">Modelo de Arquitectura de Datos (MER)</h2>
-    <p class="section-lead">A continuación, se presenta la arquitectura física de la base de datos que soporta la lógica
-      de negocio de la plataforma, garantizando la trazabilidad de los usuarios, las publicaciones, los estados de los
-      trueques y la mensajería interna.</p>
+  <section id="modelos-bd-sec">
+    <div class="section-eyebrow">07 · Diseño de Datos</div>
+    <h2 class="section-title">Modelos de Base de Datos</h2>
+    <p class="section-lead">La arquitectura de datos de <strong>RAS</strong> se construyó siguiendo las tres etapas
+      clásicas del modelado: el <strong>modelo conceptual</strong> que define las entidades del negocio, el
+      <strong>modelo lógico</strong> que estructura sus atributos y reglas, y el <strong>modelo físico (MER)</strong>
+      definitivo, que implementa las tablas con tipos de dato, llaves primarias (PK), foráneas (FK) y la cardinalidad
+      necesaria para garantizar la trazabilidad de usuarios, publicaciones, trueques y mensajería.</p>
 
-    <div class="arq-image-box"
-      style="max-width: 750px; margin: 1.5rem auto 0 auto; background: var(--blanco); border-radius: 16px; padding: 1.5rem; border: 1px solid rgba(57, 169, 0, 0.12); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04); text-align: center;">
-      <img src="imagen/diagram-export-27-6-2026-14_47_35.png"
-        alt="Modelo Entidad Relación definitivo de RAS - Red de Apoyo SENA" class="imagen-mer"
-        style="width: 100%; height: auto; border-radius: 8px; display: block; margin: 0 auto;">
-      <p class="pie-imagen"
-        style="font-size: 0.82rem; color: var(--gris-medio); font-style: italic; margin-top: 1rem; line-height: 1.4; text-align: center;">
-        * Figura 1: Estructura relacional definitiva del sistema RAS, detallando llaves primarias (PK), foráneas (FK) y
-        la cardinalidad de las operaciones.
-      </p>
+    <div class="modelos-grid">
+
+      <div class="modelo-card">
+        <div class="modelo-card-tag">Etapa 01 · Conceptual</div>
+        <h3>Mapa Conceptual</h3>
+        <p class="modelo-card-desc">Estructura visual de alto nivel que conecta a los usuarios con los recursos
+          académicos mediante la red de intercambio y donaciones.</p>
+        <div class="modelo-img-box">
+          <img src="imagen/MODELO_CONCEPTUAL.png" alt="Mapa Conceptual del Proyecto RAS" class="arq-diagram-img">
+        </div>
+        <p class="pie-imagen">* Figura 1: Entidades y relaciones del negocio.</p>
+      </div>
+
+      <div class="modelo-card">
+        <div class="modelo-card-tag">Etapa 02 · Lógico</div>
+        <h3>Modelo Lógico</h3>
+        <p class="modelo-card-desc">Organiza entidades, atributos y reglas de negocio que rigen la interacción entre
+          usuarios, publicaciones y propuestas de trueque.</p>
+        <div class="modelo-img-box">
+          <img src="imagen/MODELO_LOGICO.png" alt="Modelo Lógico de Datos del Proyecto RAS" class="arq-diagram-img">
+        </div>
+        <p class="pie-imagen">* Figura 2: Atributos y reglas de negocio de cada entidad.</p>
+      </div>
+
+      <div class="modelo-card">
+        <div class="modelo-card-tag">Etapa 03 · Físico</div>
+        <h3>Modelo Físico (MER)</h3>
+        <p class="modelo-card-desc">Implementación final de la base de datos: tablas, tipos de dato, llaves primarias
+          (PK), foráneas (FK) y cardinalidad definitivas.</p>
+        <div class="modelo-img-box">
+          <img src="imagen/diagram-export-27-6-2026-14_47_35.png"
+            alt="Modelo Físico de Datos (MER) definitivo del Proyecto RAS" class="arq-diagram-img">
+        </div>
+        <p class="pie-imagen">* Figura 3: MER definitivo con PK, FK y cardinalidad.</p>
+      </div>
+
     </div>
   </section>
 
-
+  <span class="sep"></span>
 
   <section id="diagrama-clases-sec">
-    <div class="section-eyebrow">08.5 · Diseño de Software</div>
+    <div class="section-eyebrow">08.1 · Diseño de Software</div>
     <h2 class="section-title">Diagrama de Clases UML</h2>
     <p class="section-lead">En nuestro proyecto <strong>RAS (Red de Apoyo SENA)</strong>, el Diagrama de Clases UML
       representa la estructura interna de la aplicación a nivel de código fuente. Modela de forma precisa las entidades
@@ -241,91 +267,11 @@
 
   <span class="sep"></span>
 
-
-
-  <span class="sep"></span>
-
-  <section id="arquitectura-datos-sec">
-    <div class="section-eyebrow">08.5 · Diseño de Datos</div>
-    <h2 class="section-title">Modelos de Base de Datos</h2>
-    <p class="section-lead">Esta sección detalla la evolución de nuestra base de datos en el proyecto
-      <strong>RAS</strong>, desde la definición lógica de las entidades del negocio hasta su implementación técnica
-      final.</p>
-
-
-
-
-    <section id="mapa-conceptual-sec">
-      <div class="section-eyebrow">08.4 · Fundamentos del Proyecto</div>
-      <h2 class="section-title">Mapa Conceptual RAS</h2>
-      <p class="section-lead">El <strong>Mapa Conceptual del Proyecto RAS (Red de Apoyo SENA)</strong> funciona como la
-        herramienta visual que estructura el funcionamiento de nuestra plataforma colaborativa. Este esquema expone los
-        elementos clave del ecosistema: la plataforma web como eje central, las funcionalidades de trueque y donaciones
-        como mecanismos de interacción, y la mitigación de la deserción estudiantil junto al apoyo económico como
-        beneficios fundamentales para la comunidad de aprendices.</p>
-
-      <div class="arq-image-box"
-        style="max-width: 750px; margin: 1.5rem auto 0 auto; background: var(--blanco); border-radius: 16px; padding: 1.5rem; border: 1px solid rgba(57, 169, 0, 0.12); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04); text-align: center;">
-        <img src="imagen/MODELO_CONCEPTUAL.png" alt="Mapa Conceptual del Proyecto RAS" class="arq-diagram-img"
-          style="width: 100%; height: auto; border-radius: 8px; display: block; margin: 0 auto;">
-        <p class="pie-imagen"
-          style="font-size: 0.82rem; color: var(--gris-medio); font-style: italic; margin-top: 1rem; line-height: 1.4; text-align: center;">
-          * Figura 2: Mapa conceptual que ilustra la lógica del sistema, conectando a los usuarios con recursos
-          académicos mediante una red de intercambio seguro y solidario.
-        </p>
-      </div>
-    </section>
-
-
-
-    <section id="modelo-fisico-sec">
-      <div class="section-eyebrow">08.6 · Diseño de Datos</div>
-      <h2 class="section-title">Modelo Físico de Datos</h2>
-      <p class="section-lead">El <strong>Modelo Físico del sistema RAS (Red de Apoyo SENA)</strong> define la estructura
-        real de nuestra base de datos. Este esquema detalla la implementación de las tablas, la asignación de claves
-        primarias (PK) y claves foráneas (FK), y la cardinalidad establecida para garantizar la integridad referencial y
-        la trazabilidad de cada trueque, donación y registro de usuario dentro de la plataforma.</p>
-
-      <div class="arq-image-box"
-        style="max-width: 900px; margin: 1.5rem auto 0 auto; background: var(--blanco); border-radius: 16px; padding: 1.5rem; border: 1px solid rgba(57, 169, 0, 0.12); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04); text-align: center;">
-        <img src="imagen/MAPA_FISICO.png" alt="Modelo Físico de Datos del Proyecto RAS" class="arq-diagram-img"
-          style="width: 100%; height: auto; border-radius: 8px; display: block; margin: 0 auto;">
-        <p class="pie-imagen"
-          style="font-size: 0.82rem; color: var(--gris-medio); font-style: italic; margin-top: 1rem; line-height: 1.4; text-align: center;">
-          * Figura 4: Modelo Físico que representa la organización de las tablas y relaciones del sistema RAS,
-          detallando los módulos de Usuario, Intercambio y Gestión para una operación eficiente.
-        </p>
-      </div>
-    </section>
-
-    <section id="modelo-logico-sec">
-      <div class="section-eyebrow">08.5.5 · Diseño de Datos</div>
-      <h2 class="section-title">Modelo Lógico de Datos</h2>
-      <p class="section-lead">El <strong>Modelo Lógico del sistema RAS (Red de Apoyo SENA)</strong> describe la
-        estructura de los datos desde una perspectiva conceptual y relacional. Este diseño organiza las entidades,
-        atributos y las reglas de negocio que rigen la interacción entre usuarios, publicaciones y el proceso de
-        intercambio, permitiendo validar la lógica de la información antes de su transformación al esquema físico de la
-        base de datos.</p>
-
-      <div class="arq-image-box"
-        style="max-width: 900px; margin: 1.5rem auto 0 auto; background: var(--blanco); border-radius: 16px; padding: 1.5rem; border: 1px solid rgba(57, 169, 0, 0.12); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04); text-align: center;">
-        <img src="imagen/MODELO_LOGICO.png" alt="Modelo Lógico de Datos del Proyecto RAS" class="arq-diagram-img"
-          style="width: 100%; height: auto; border-radius: 8px; display: block; margin: 0 auto;">
-        <p class="pie-imagen"
-          style="font-size: 0.82rem; color: var(--gris-medio); font-style: italic; margin-top: 1rem; line-height: 1.4; text-align: center;">
-          * Figura 3.5: Modelo Lógico que detalla las entidades del negocio y sus atributos clave, estructurando la
-          lógica de las relaciones entre usuarios, ofertas de trueque y gestión de publicaciones del sistema RAS.
-        </p>
-      </div>
-    </section>
-
-    <span class="sep"></span>
-
-
-
-    <span class="sep"></span>
-
-    <section id="otros-diagramas-sec" style="max-width: 1100px; margin: 0 auto; padding: 2rem 0;">
+  <section id="otros-diagramas-sec">
+    <div class="section-eyebrow">08.2 · Diseño de Software</div>
+    <h2 class="section-title">Otros Diagramas UML</h2>
+    <p class="section-lead">Diagramas complementarios que documentan el comportamiento, despliegue y componentes del
+      sistema RAS.</p>
 
       <div class="diag-grid"
         style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; width: 100%;">
@@ -428,7 +374,7 @@
     <span class="sep"></span>
 
     <section id="arquitectura">
-      <div class="section-eyebrow">08 · Estructura de Software</div>
+      <div class="section-eyebrow">09 · Estructura de Software</div>
       <h2 class="section-title">Cómo está construido RAS</h2>
       <p class="section-lead">La plataforma sigue una arquitectura por capas bien definida con un desacoplamiento de
         responsabilidades técnico.</p>
@@ -473,7 +419,7 @@
 
 
     <section id="patrones-sec">
-      <div class="section-eyebrow">08 · Patrones e Ingeniería</div>
+      <div class="section-eyebrow">09.1 · Patrones e Ingeniería</div>
       <h2 class="section-title">Patrones de Arquitectura Estándar</h2>
       <p class="section-lead">El sistema adopta estándares industriales de la ingeniería de software para asegurar la
         alta disponibilidad, escalabilidad y mantenibilidad del código.</p>
@@ -542,7 +488,254 @@
       </div>
 
 
-      
+      <section class="ras-standards">
+        <style>
+          /* Quita este bloque :root si estas variables ya existen en tu sitio */
+          .ras-standards {
+            --blanco: #ffffff;
+            --verde: #39A900;
+            --verde-suave: #eaf7e6;
+            --verde-oscuro: #1f6b1f;
+            --negro: #1a1a1a;
+            --gris-texto: #6b6b6b;
+            --gris-borde: #eceae4;
+          }
+
+          .ras-standards {
+            font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+            background: #fafaf8;
+            color: var(--negro);
+            padding: 3.5rem 2rem 4.5rem;
+            max-width: 1100px;
+            margin: 0 auto;
+          }
+
+          .ras-standards * {
+            box-sizing: border-box;
+          }
+
+          .ras-standards .rs-eyebrow {
+            display: inline-block;
+            background: var(--verde-suave);
+            color: var(--verde-oscuro);
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            padding: 0.3rem 0.7rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+          }
+
+          .ras-standards h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.1rem;
+            font-weight: 700;
+            margin: 0 0 0.6rem;
+            color: var(--negro);
+          }
+
+          .ras-standards>p.rs-sub {
+            color: var(--gris-texto);
+            font-size: 0.98rem;
+            max-width: 62ch;
+            line-height: 1.65;
+            margin: 0 0 3rem;
+          }
+
+          .ras-standards h2.rs-section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--negro);
+            margin: 3.2rem 0 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+          }
+
+          .ras-standards h2.rs-section-title .rs-step {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 8px;
+            background: var(--verde);
+            color: var(--blanco);
+            font-size: 0.85rem;
+            font-weight: 700;
+            font-family: 'Space Grotesk', sans-serif;
+          }
+
+          /* ---- Grid de tarjetas (mismo patron que diag-card) ---- */
+          .ras-standards .rs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.4rem;
+            margin-bottom: 1rem;
+          }
+
+          .ras-standards .diag-card {
+            background: var(--blanco);
+            border-radius: 16px;
+            padding: 2rem 1.6rem;
+            border: 1px solid rgba(57, 169, 0, 0.12);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s ease;
+          }
+
+          .ras-standards .diag-card:hover {
+            transform: translateY(-3px);
+          }
+
+          .ras-standards .diag-icon {
+            width: 44px;
+            height: 44px;
+            background: var(--verde-suave);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            margin-bottom: 1.2rem;
+            color: var(--verde-oscuro);
+          }
+
+          .ras-standards .diag-card h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.6rem;
+            color: var(--negro);
+          }
+
+          .ras-standards .diag-card p {
+            font-size: 0.88rem;
+            color: var(--gris-texto);
+            line-height: 1.6;
+            margin-bottom: 1.4rem;
+          }
+
+          .ras-standards .diag-card code {
+            display: block;
+            font-family: 'SF Mono', Menlo, monospace;
+            font-size: 0.78rem;
+            background: var(--verde-suave);
+            color: var(--verde-oscuro);
+            padding: 0.3rem 0.5rem;
+            border-radius: 6px;
+            margin-bottom: 0.35rem;
+          }
+
+          .ras-standards .diag-tag {
+            align-self: flex-start;
+            background: var(--verde-suave);
+            color: var(--verde-oscuro);
+            font-size: 0.68rem;
+            font-weight: 700;
+            padding: 0.25rem 0.6rem;
+            border-radius: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+          }
+
+          .ras-standards .diag-tag.rs-warn {
+            background: #fdeceb;
+            color: #b3402c;
+          }
+
+          /* ---- Tabla ---- */
+          .ras-standards table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--blanco);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            margin-bottom: 1.2rem;
+          }
+
+          .ras-standards th,
+          .ras-standards td {
+            text-align: left;
+            padding: 0.85rem 1.1rem;
+            font-size: 0.85rem;
+            border-bottom: 1px solid var(--gris-borde);
+          }
+
+          .ras-standards th {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.7rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: var(--verde-oscuro);
+            background: var(--verde-suave);
+          }
+
+          .ras-standards td code {
+            font-family: 'SF Mono', Menlo, monospace;
+            font-size: 0.78rem;
+            background: var(--verde-suave);
+            color: var(--verde-oscuro);
+            padding: 0.15rem 0.45rem;
+            border-radius: 4px;
+          }
+
+          .ras-standards tr:last-child td {
+            border-bottom: none;
+          }
+
+          /* ---- Bloque de codigo ---- */
+          .ras-standards pre {
+            background: #14261a;
+            color: #eef3ea;
+            font-family: 'SF Mono', Menlo, Consolas, monospace;
+            font-size: 0.82rem;
+            line-height: 1.65;
+            padding: 1.3rem 1.4rem;
+            border-radius: 12px;
+            overflow-x: auto;
+            margin-bottom: 1.4rem;
+          }
+
+          .ras-standards pre .k {
+            color: #7fd858;
+          }
+
+          .ras-standards pre .s {
+            color: #d9c07a;
+          }
+
+          .ras-standards pre .c {
+            color: #8aa38f;
+            font-style: italic;
+          }
+
+          .ras-standards .rs-note {
+            background: var(--verde-suave);
+            border-left: 3px solid var(--verde);
+            color: var(--verde-oscuro);
+            font-size: 0.85rem;
+            padding: 0.7rem 1rem;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 1.4rem;
+          }
+
+          @media (max-width: 640px) {
+            .ras-standards {
+              padding: 2.5rem 1.2rem 3.5rem;
+            }
+
+            .ras-standards h1 {
+              font-size: 1.6rem;
+            }
+          }
+        </style>
+
         <span class="rs-eyebrow">RAS · Red de Apoyo SENA</span>
         <h1>Estándares de Codificación</h1>
         <p class="rs-sub">Convenciones de nomenclatura y estructura derivadas del diccionario de datos y del script SQL
@@ -732,9 +925,12 @@
 
       </section>
 
+    </section>
 
-      <section id="metodologia">
-        <div class="section-eyebrow">09 · Gestión de Ingeniería</div>
+    <span class="sep"></span>
+
+    <section id="metodologia">
+      <div class="section-eyebrow">11 · Gestión de Ingeniería</div>
         <h2 class="section-title">Marco de Trabajo: Scrum</h2>
         <p class="section-lead">El ciclo de vida de la plataforma RAS se gestiona bajo ingeniería de software ágil,
           traduciendo los requerimientos del Backlog en incrementos de software iterativos y funcionales.</p>
@@ -832,9 +1028,14 @@
       </section>
 
       <footer>
+        <img src="imagen/logo-ras.png" alt="Logo RAS" style="width:56px; height:56px; object-fit:contain; border-radius:50%; margin-bottom:1rem;">
         <p><strong>RAS — Red de Apoyo SENA</strong></p>
         <p>Johan Gonzalo García Walteros · Nikol Vannesa Castañeda Carrillo</p>
         <p>Instructores : Belman marin , Andres Chavez · Programa Análisis y Desarrollo de Software · SENA 2025–2026</p>
+        <p style="margin-top:0.9rem;">
+          <a href="https://www.figma.com/site/sWSKYAG7FcVWKQzF6HvJ5q/Sin-título?node-id=0-1&p=f&t=AjfuWoU9uYDr4PJ5-0"
+            target="_blank" rel="noopener" style="color:#B8FF7A; text-decoration:none; font-weight:600;">Ver Prototipo en Figma ↗</a>
+        </p>
         <p style="margin-top:0.75rem; font-size:0.72rem; opacity:0.4;">Presentación Final de Trimestre · Inicio Quinto
           Trimestre</p>
       </footer>
