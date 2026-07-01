@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAS — Presentación Final de Trimestre</title>
+  <link rel="stylesheet" href="css/sytle.css">
+  <link rel="icon" type="image/png" sizes="192x192" href="imagen/corazon .png">
+
+  </div>
+
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-logo">RAS<span>●</span></div>
+    <ul class="nav-links">
+      <li><a href="#intro">Introducción</a></li>
+      <li><a href="#problema">Problema</a></li>
+      <li><a href="#pregunta">Pregunta</a></li>
+      <li><a href="#obj-general-sec">Objetivo General</a></li>
+      <li><a href="#obj-custom-sec">Objetivos Especificos</a>
+      <li><a href="#diagramas">Diagramas</a></li>
+      <li><a href="#mapa-conceptual-sec">Modelos</a></li>
+      <li><a href="#arquitectura">Arquitectura</a></li>
+      <li><a href="#metodologia">Metodología Scrum</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <div class="hero-badge">Ficha grupo 3275760</div>
+    <h1>Red de<br><em>Apoyo SENA</em></h1>
+    <p class="hero-sub">Plataforma digital de intercambio solidario y donaciones académicas entre aprendices del SENA ·
+      Presentación Final de Trimestre</p>
+    <div class="hero-meta">
+      <div class="meta-item">
+        <span class="val">INTEGRANTE</span>
+        <span class="lbl">Johan Gonzalo Garcia</span>
+      </div>
+      <div class="meta-item">
+        <span class="val">INTEGRANTE</span>
+        <span class="lbl">Vannesa Castañeda</span>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M7 10l5 5 5-5" />
+      </svg>
+
+    </div>
+  </div>
+
+  <section id="intro">
+    <div class="section-eyebrow">02 · Introducción</div>
+    <h2 class="section-title">¿De qué trata RAS?</h2>
+    <p class="section-lead">RAS nace como respuesta a una necesidad real en la comunidad SENA: facilitar el acceso a
+      materiales académicos mediante un sistema de trueque y donaciones supervisado por la institution.</p>
+
+    <div class="proyecto-container">
+      <div class="proyecto-descripcion">
+        <p class="destacado">
+          <strong>RAS (Red de Apoyo SENA)</strong> es una plataforma web colaborativa diseñada específicamente para la
+          comunidad de aprendices del SENA, cuyo objetivo principal es facilitar el <strong>trueque de materiales de
+            formación, herramientas y donaciones</strong>.
+        </p>
+        <p>
+          El sistema busca mitigar la deserción estudiantil y apoyar la economía de los aprendices, permitiendo que
+          elementos que un estudiante ya no utiliza (como libros, herramientas de taller, componentes electrónicos o
+          uniformes) puedan ser intercambiados de manera segura o entregados como donación a quienes los necesitan para
+          continuar con sus procesos de aprendizaje.
+        </p>
+      </div>
+    </div>
+
+    <div class="intro-grid">
+      <div class="card">
+        <div class="card-icon">🎓</div>
+        <h3>Comunidad SENA</h3>
+        <p>Una plataforma exclusiva para aprendices, donde quienes poseen artículos en buen estado pueden contribuir
+          solidariamente con quienes más los necesitan.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔄</div>
+        <h3>Trueque digital</h3>
+        <p>Uniformes, equipos de cómputo, libros y demás insumos académicos circulan dentro de un entorno digital
+          seguro, supervisado por la institución.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🛡️</div>
+        <h3>Entorno supervisado</h3>
+        <p>El sistema garantiza verificación de usuarios SENA, evidencia fotográfica de los intercambios y trazabilidad
+          completa de cada transacción.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🤝</div>
+        <h3>Solidaridad institucional</h3>
+        <p>La iniciativa amplía el alcance de la red de apoyo existente dentro del SENA, favoreciendo a los aprendices
+          en condición de vulnerabilidad económica.</p>
+      </div>
+    </div>
+  </section>
+
+  <span class="sep"></span>
+
+  <section id="problema">
+    <div class="section-eyebrow">03 · Situación Problema</div>
+    <h2 class="section-title">El problema que resolvemos</h2>
+    <p class="section-lead">El SENA carece de un mecanismo digital estructurado para gestionar donaciones e intercambios
+      entre sus miembros de forma eficiente, transparente y trazable.</p>
+
+    <div class="problema-layout">
+      <div class="problema-text">
+        <p>En el SENA existen aprendices que enfrentan dificultades económicas que les impiden acceder a los materiales
+          e implementos necesarios para su formación técnica o tecnológica.</p>
+        <p>Esta carencia genera que recursos en buen estado permanezcan sin uso por parte de quienes ya no los
+          necesitan, mientras otros aprendices los requieren urgentemente.</p>
+        <p>La ausencia de una plataforma de gestión de donaciones limita el alcance de la solidaridad institucional y
+          dificulta el control, la verificación y el aprovechamiento de los recursos disponibles en la comunidad SENA.
+        </p>
+      </div>
+
+      <div class="stat-card img-card">
+        <img src="imagen/imagen.jpeg" alt="Ilustración de intercambio de donaciones" class="stat-img">
+      </div>
+    </div>
+  </section>
+
+  <span class="sep"></span>
+
+  <section id="pregunta">
+    <div class="section-eyebrow">04 · Pregunta Problema</div>
+    <h2 class="section-title">La pregunta que guía el proyecto</h2>
+
+    <div class="pregunta-block">
+      <div class="q-label">Pregunta de investigación</div>
+      <blockquote>
+        Cómo articular eficientemente a la comunidad del SENA <em>y a donantes externos mediante un sistema web de
+          trueques y donaciones</em> para mitigar la falta de recursos académicos.
+      </blockquote>
+    </div>
+  </section>
+
+  <span class="sep"></span>
+
+  <section id="obj-general-sec">
+    <div class="section-eyebrow">05 · Meta Principal</div>
+    <h2 class="section-title">Objetivo General</h2>
+    <p class="section-lead">El propósito principal de RAS está enfocado en generar un impacto directo y positivo sobre
+      el bienestar económico y educativo de la comunidad estudiantil.</p>
+
+    <div class="obj-general">
+      <p>Implementar en el SENA un aplicativo que permita el intercambio solidario entre aprendices y personas de la
+        comunidad, con el fin de contribuir al mejoramiento de la calidad de vida de los aprendices en condiciones de
+        vulnerabilidad económica, mediante la entrega de donaciones en uniformes, utensilios y materiales de apoyo
+        necesarios para el adecuado desarrollo de su formación técnica o tecnológica.</p>
+    </div>
+  </section>
+
+  <span class="sep"></span>
+
+  <section id="obj-custom-sec">
+    <div class="section-eyebrow">06 · Líneas de Acción</div>
+    <h2 class="section-title">Objetivos Específicos</h2>
+    <p class="section-lead">Pasos tácticos y funcionales diseñados para materializar el alcance del sistema de manera
+      progresiva.</p>
+
+    <div class="obj-esp-grid">
+      <div class="obj-card">
+        <div class="obj-num">01</div>
+        <p>Crear un sistema donde los usuarios puedan registrarse, iniciar sesión y gestionar su perfil dentro de la
+          plataforma.</p>
+      </div>
+      <div class="obj-card">
+        <div class="obj-num">02</div>
+        <p>Recolectar y redistribuir donaciones de ropa y artículos básicos a personas necesitadas de la comunidad
+          local.</p>
+      </div>
+      <div class="obj-card">
+        <div class="obj-num">03</div>
+        <p>Implementar un sistema solidario donde los beneficiarios puedan contribuir según sus capacidades, fomentando
+          el apoyo mutuo.</p>
+      </div>
+      <div class="obj-card">
+        <div class="obj-num">04</div>
+        <p>Permitir que los usuarios realicen donaciones de manera sencilla y segura a través de la plataforma digital.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  </div>
+
+
+  <span class="sep"></span>
+
+  <section id="diagramas">
+    <div class="section-eyebrow">07 · Diagramas UML y Base de Datos</div>
+    <h2 class="section-title">Modelo de Arquitectura de Datos (MER)</h2>
+    <p class="section-lead">A continuación, se presenta la arquitectura física de la base de datos que soporta la lógica
+      de negocio de la plataforma, garantizando la trazabilidad de los usuarios, las publicaciones, los estados de los
+      trueques y la mensajería interna.</p>
+
+    <div class="arq-image-box"
+      style="max-width: 750px; margin: 1.5rem auto 0 auto; background: var(--blanco); border-radius: 16px; padding: 1.5rem; border: 1px solid rgba(57, 169, 0, 0.12); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04); text-align: center;">
+      <img src="imagen/diagram-export-27-6-2026-14_47_35.png"
+        alt="Modelo Entidad Relación definitivo de RAS - Red de Apoyo SENA" class="imagen-mer"
+        style="width: 100%; height: auto; border-radius: 8px; display: block; margin: 0 auto;">
+      <p class="pie-imagen"
+        style="font-size: 0.82rem; color: var(--gris-medio); font-style: italic; margin-top: 1rem; line-height: 1.4; text-align: center;">
+        * Figura 1: Estructura relacional definitiva del sistema RAS, detallando llaves primarias (PK), foráneas (FK) y
+        la cardinalidad de las operaciones.
+      </p>
+    </div>
+  </section>
+
+
+
+  <section id="diagrama-clases-sec">
+    <div class="section-eyebrow">08.5 · Diseño de Software</div>
+    <h2 class="section-title">Diagrama de Clases UML</h2>
+    <p class="section-lead">En nuestro proyecto <strong>RAS (Red de Apoyo SENA)</strong>, el Diagrama de Clases UML
+      representa la estructura interna de la aplicación a nivel de código fuente. Modela de forma precisa las entidades
+      del negocio, los controladores que reciben las peticiones de los aprendices, y los servicios encargados de
+      gestionar la lógica de los trueques, donaciones, mensajería y validaciones, asegurando un desarrollo de software
+      organizado y modular.</p>
+
+    <div class="arq-image-box"
+      style="max-width: 750px; margin: 1.5rem auto 0 auto; background: var(--blanco); border-radius: 16px; padding: 1.5rem; border: 1px solid rgba(57, 169, 0, 0.12); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04); text-align: center;">
+      <img src="imagen/clases.jpg" alt="Diagrama de Clases UML del Proyecto RAS" class="arq-diagram-img"
+        style="width: 100%; height: auto; border-radius: 8px; display: block; margin: 0 auto;">
+      <p class="pie-imagen"
+        style="font-size: 0.82rem; color: var(--gris-medio); font-style: italic; margin-top: 1rem; line-height: 1.4; text-align: center;">
+        * Figura 3: Diagrama de Clases UML que detalla la estructura de programación, métodos y relaciones esenciales
+        del sistema RAS.
+      </p>
+    </div>
+  </section>
+
+  <span class="sep"></span>
+
+
+
+  <span class="sep"></span>
+
+  <section id="arquitectura-datos-sec">
+    <div class="section-eyebrow">08.5 · Diseño de Datos</div>
+    <h2 class="section-title">Modelos de Base de Datos</h2>
+    <p class="section-lead">Esta sección detalla la evolución de nuestra base de datos en el proyecto
+      <strong>RAS</strong>, desde la definición lógica de las entidades del negocio hasta su implementación técnica
+      final.</p>
+
+
+
+
+    <section id="mapa-conceptual-sec">
+      <div class="section-eyebrow">08.4 · Fundamentos del Proyecto</div>
+      <h2 class="section-title">Mapa Conceptual RAS</h2>
+      <p class="section-lead">El <strong>Mapa Conceptual del Proyecto RAS (Red de Apoyo SENA)</strong> funciona como la
+        herramienta visual que estructura el funcionamiento de nuestra plataforma colaborativa. Este esquema expone los
+        elementos clave del ecosistema: la plataforma web como eje central, las funcionalidades de trueque y donaciones
+        como mecanismos de interacción, y la mitigación de la deserción estudiantil junto al apoyo económico como
+        beneficios fundamentales para la comunidad de aprendices.</p>
+
+      <div class="arq-image-box"
+        style="max-width: 750px; margin: 1.5rem auto 0 auto; background: var(--blanco); border-radius: 16px; padding: 1.5rem; border: 1px solid rgba(57, 169, 0, 0.12); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04); text-align: center;">
+        <img src="imagen/MODELO_CONCEPTUAL.png" alt="Mapa Conceptual del Proyecto RAS" class="arq-diagram-img"
+          style="width: 100%; height: auto; border-radius: 8px; display: block; margin: 0 auto;">
+        <p class="pie-imagen"
+          style="font-size: 0.82rem; color: var(--gris-medio); font-style: italic; margin-top: 1rem; line-height: 1.4; text-align: center;">
+          * Figura 2: Mapa conceptual que ilustra la lógica del sistema, conectando a los usuarios con recursos
+          académicos mediante una red de intercambio seguro y solidario.
+        </p>
+      </div>
+    </section>
+
+
+
+    <section id="modelo-fisico-sec">
+      <div class="section-eyebrow">08.6 · Diseño de Datos</div>
+      <h2 class="section-title">Modelo Físico de Datos</h2>
+      <p class="section-lead">El <strong>Modelo Físico del sistema RAS (Red de Apoyo SENA)</strong> define la estructura
+        real de nuestra base de datos. Este esquema detalla la implementación de las tablas, la asignación de claves
+        primarias (PK) y claves foráneas (FK), y la cardinalidad establecida para garantizar la integridad referencial y
+        la trazabilidad de cada trueque, donación y registro de usuario dentro de la plataforma.</p>
+
+      <div class="arq-image-box"
+        style="max-width: 900px; margin: 1.5rem auto 0 auto; background: var(--blanco); border-radius: 16px; padding: 1.5rem; border: 1px solid rgba(57, 169, 0, 0.12); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04); text-align: center;">
+        <img src="imagen/MAPA_FISICO.png" alt="Modelo Físico de Datos del Proyecto RAS" class="arq-diagram-img"
+          style="width: 100%; height: auto; border-radius: 8px; display: block; margin: 0 auto;">
+        <p class="pie-imagen"
+          style="font-size: 0.82rem; color: var(--gris-medio); font-style: italic; margin-top: 1rem; line-height: 1.4; text-align: center;">
+          * Figura 4: Modelo Físico que representa la organización de las tablas y relaciones del sistema RAS,
+          detallando los módulos de Usuario, Intercambio y Gestión para una operación eficiente.
+        </p>
+      </div>
+    </section>
+
+    <section id="modelo-logico-sec">
+      <div class="section-eyebrow">08.5.5 · Diseño de Datos</div>
+      <h2 class="section-title">Modelo Lógico de Datos</h2>
+      <p class="section-lead">El <strong>Modelo Lógico del sistema RAS (Red de Apoyo SENA)</strong> describe la
+        estructura de los datos desde una perspectiva conceptual y relacional. Este diseño organiza las entidades,
+        atributos y las reglas de negocio que rigen la interacción entre usuarios, publicaciones y el proceso de
+        intercambio, permitiendo validar la lógica de la información antes de su transformación al esquema físico de la
+        base de datos.</p>
+
+      <div class="arq-image-box"
+        style="max-width: 900px; margin: 1.5rem auto 0 auto; background: var(--blanco); border-radius: 16px; padding: 1.5rem; border: 1px solid rgba(57, 169, 0, 0.12); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04); text-align: center;">
+        <img src="imagen/MODELO_LOGICO.png" alt="Modelo Lógico de Datos del Proyecto RAS" class="arq-diagram-img"
+          style="width: 100%; height: auto; border-radius: 8px; display: block; margin: 0 auto;">
+        <p class="pie-imagen"
+          style="font-size: 0.82rem; color: var(--gris-medio); font-style: italic; margin-top: 1rem; line-height: 1.4; text-align: center;">
+          * Figura 3.5: Modelo Lógico que detalla las entidades del negocio y sus atributos clave, estructurando la
+          lógica de las relaciones entre usuarios, ofertas de trueque y gestión de publicaciones del sistema RAS.
+        </p>
+      </div>
+    </section>
+
+    <span class="sep"></span>
+
+
+
+    <span class="sep"></span>
+
+    <section id="otros-diagramas-sec" style="max-width: 1100px; margin: 0 auto; padding: 2rem 0;">
+
+      <div class="diag-grid"
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; width: 100%;">
+
+        <div class="diag-card"
+          style="background: var(--blanco); border-radius: 16px; padding: 2.2rem 1.8rem; border: 1px solid rgba(57,169,0,0.12); box-shadow: 0 4px 20px rgba(0,0,0,0.04); display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.2s ease;">
+          <div>
+            <div class="diag-icon"
+              style="width: 44px; height: 44px; background: var(--verde-suave); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; margin-bottom: 1.2rem; color: var(--verde-oscuro);">
+              🏗️</div>
+            <h3
+              style="font-family: 'Space Grotesk', sans-serif; font-size: 1.15rem; font-weight: 700; margin-bottom: 0.6rem; color: var(--negro);">
+              Diagrama de Clases</h3>
+            <p style="font-size: 0.88rem; color: var(--gris-texto); line-height: 1.6; margin-bottom: 1.5rem;">Entidades
+              del modelo de datos: USUARIO, ROL, PUBLICACION, PROPUESTA_TRUEQUE, MENSAJE, CALIFICACION y 8 entidades más
+              con sus relaciones.</p>
+          </div>
+          <div class="diag-tag"
+            style="align-self: flex-start; background: var(--verde-suave); color: var(--verde-oscuro); font-size: 0.68rem; font-weight: 700; padding: 0.25rem 0.6rem; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.5px;">
+            UML · Clases</div>
+        </div>
+
+        <div class="diag-card"
+          style="background: var(--blanco); border-radius: 16px; padding: 2.2rem 1.8rem; border: 1px solid rgba(57,169,0,0.12); box-shadow: 0 4px 20px rgba(0,0,0,0.04); display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.2s ease;">
+          <div>
+            <div class="diag-icon"
+              style="width: 44px; height: 44px; background: var(--verde-suave); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; margin-bottom: 1.2rem; color: var(--verde-oscuro);">
+              📋</div>
+            <h3
+              style="font-family: 'Space Grotesk', sans-serif; font-size: 1.15rem; font-weight: 700; margin-bottom: 0.6rem; color: var(--negro);">
+              Diagrama de Registro</h3>
+            <p style="font-size: 0.88rem; color: var(--gris-texto); line-height: 1.6; margin-bottom: 1.5rem;">Flujo
+              completo del proceso de registro de usuario mediante correo Mi SENA, número de teléfono o cédula y
+              generación de credenciales.</p>
+          </div>
+          <div class="diag-tag"
+            style="align-self: flex-start; background: var(--verde-suave); color: var(--verde-oscuro); font-size: 0.68rem; font-weight: 700; padding: 0.25rem 0.6rem; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.5px;">
+            UML · Actividad</div>
+        </div>
+
+        <div class="diag-card"
+          style="background: var(--blanco); border-radius: 16px; padding: 2.2rem 1.8rem; border: 1px solid rgba(57,169,0,0.12); box-shadow: 0 4px 20px rgba(0,0,0,0.04); display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.2s ease;">
+          <div>
+            <div class="diag-icon"
+              style="width: 44px; height: 44px; background: var(--verde-suave); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; margin-bottom: 1.2rem; color: var(--verde-oscuro);">
+              📦</div>
+            <h3
+              style="font-family: 'Space Grotesk', sans-serif; font-size: 1.15rem; font-weight: 700; margin-bottom: 0.6rem; color: var(--negro);">
+              Diagrama de Publicación</h3>
+            <p style="font-size: 0.88rem; color: var(--gris-texto); line-height: 1.6; margin-bottom: 1.5rem;">Proceso de
+              publicación de artículos para trueque: ingreso de título, descripción, fotos, categoría y lo que el
+              usuario espera recibir.</p>
+          </div>
+          <div class="diag-tag"
+            style="align-self: flex-start; background: var(--verde-suave); color: var(--verde-oscuro); font-size: 0.68rem; font-weight: 700; padding: 0.25rem 0.6rem; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.5px;">
+            UML · Secuencia</div>
+        </div>
+
+        <div class="diag-card"
+          style="background: var(--blanco); border-radius: 16px; padding: 2.2rem 1.8rem; border: 1px solid rgba(57,169,0,0.12); box-shadow: 0 4px 20px rgba(0,0,0,0.04); display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.2s ease;">
+          <div>
+            <div class="diag-icon"
+              style="width: 44px; height: 44px; background: var(--verde-suave); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; margin-bottom: 1.2rem; color: var(--verde-oscuro);">
+              🌐</div>
+            <h3
+              style="font-family: 'Space Grotesk', sans-serif; font-size: 1.15rem; font-weight: 700; margin-bottom: 0.6rem; color: var(--negro);">
+              Diagrama de Despliegue</h3>
+            <p style="font-size: 0.88rem; color: var(--gris-texto); line-height: 1.6; margin-bottom: 1.5rem;">
+              Arquitectura física del sistema: cliente web/móvil, servidor de aplicaciones, base de datos y servicios
+              externos de notificación.</p>
+          </div>
+          <div class="diag-tag"
+            style="align-self: flex-start; background: var(--verde-suave); color: var(--verde-oscuro); font-size: 0.68rem; font-weight: 700; padding: 0.25rem 0.6rem; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.5px;">
+            UML · Despliegue</div>
+        </div>
+
+        <div class="diag-card"
+          style="background: var(--blanco); border-radius: 16px; padding: 2.2rem 1.8rem; border: 1px solid rgba(57,169,0,0.12); box-shadow: 0 4px 20px rgba(0,0,0,0.04); display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.2s ease;">
+          <div>
+            <div class="diag-icon"
+              style="width: 44px; height: 44px; background: var(--verde-suave); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; margin-bottom: 1.2rem; color: var(--verde-oscuro);">
+              🧩</div>
+            <h3
+              style="font-family: 'Space Grotesk', sans-serif; font-size: 1.15rem; font-weight: 700; margin-bottom: 0.6rem; color: var(--negro);">
+              Diagrama de Componentes</h3>
+            <p style="font-size: 0.88rem; color: var(--gris-texto); line-height: 1.6; margin-bottom: 1.5rem;">Módulos
+              internos de la plataforma: autenticación, publicaciones, trueques, mensajería, notificaciones, evidencias
+              y PQR.</p>
+          </div>
+          <div class="diag-tag"
+            style="align-self: flex-start; background: var(--verde-suave); color: var(--verde-oscuro); font-size: 0.68rem; font-weight: 700; padding: 0.25rem 0.6rem; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.5px;">
+            UML · Componentes</div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <span class="sep"></span>
+
+    <section id="arquitectura">
+      <div class="section-eyebrow">08 · Estructura de Software</div>
+      <h2 class="section-title">Cómo está construido RAS</h2>
+      <p class="section-lead">La plataforma sigue una arquitectura por capas bien definida con un desacoplamiento de
+        responsabilidades técnico.</p>
+
+      <div class="arq-main-container">
+
+        <div class="arq-image-box">
+          <img src="imagen/ar.jpg" alt="Diagrama de Arquitectura Multicapa Desacoplada para RAS"
+            class="arq-diagram-img">
+          <p class="pie-imagen">* Figura 1: Diagrama de Arquitectura Multicapa Desacoplada para RAS.</p>
+        </div>
+
+        <div class="arq-wrap">
+          <div class="arq-layers">
+            <div class="arq-layer">
+              <div class="layer-name">🖥️ Presentación</div>
+              <div class="layer-desc">Interfaz de usuario responsiva (web y móvil). Diseño intuitivo para usuarios con
+                conocimientos básicos. Compatible con navegadores modernos y múltiples dispositivos.</div>
+            </div>
+            <div class="arq-layer">
+              <div class="layer-name">⚙️ Negocio</div>
+              <div class="layer-desc">Lógica de trueques, validaciones de propuestas, sistema de calificaciones,
+                mensajería interna, notificaciones por correo y gestión de PQR.</div>
+            </div>
+            <div class="arq-layer">
+              <div class="layer-name">💾 Datos</div>
+              <div class="layer-desc">Base de datos relacional con 13 entidades, script SQL completo, copias de
+                seguridad automáticas diarias y cifrado de contraseñas con bcrypt.</div>
+            </div>
+            <div class="arq-layer">
+              <div class="layer-name">🔗 Servicios</div>
+              <div class="layer-desc">Integración con servicio de correo para notificaciones, almacenamiento de imágenes
+                (fotos de perfil, artículos y evidencias) y geolocalización de sedes.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+    <section id="patrones-sec">
+      <div class="section-eyebrow">08 · Patrones e Ingeniería</div>
+      <h2 class="section-title">Patrones de Arquitectura Estándar</h2>
+      <p class="section-lead">El sistema adopta estándares industriales de la ingeniería de software para asegurar la
+        alta disponibilidad, escalabilidad y mantenibilidad del código.</p>
+
+      <div class="arq-wrap">
+        <div class="arq-layers">
+          <div class="arq-layer">
+            <div class="layer-name">🏛️ Arquitectura Multicapa</div>
+            <div class="layer-desc">Separación estricta de responsabilidades dividida en Presentación (UI responsiva),
+              Capa de Negocio (Controladores y Servicios lógicos) y Capa de Datos para blindar las transacciones de
+              trueque.</div>
+          </div>
+          <div class="arq-layer">
+            <div class="layer-name">🔄 Patrón M-V-C</div>
+            <div class="layer-desc"><strong>Modelo-Vista-Controlador:</strong> Las vistas consumen datos reactivos, los
+              controladores orquestan la lógica de validación de intercambios y los modelos mapean las reglas del MER de
+              forma segura.</div>
+          </div>
+          <div class="arq-layer">
+            <div class="layer-name">🗃️ Repository Pattern</div>
+            <div class="layer-desc">Actúa como una capa de abstracción entre la lógica de negocio y el origen de datos
+              relacional, aislando las consultas directas a la base de datos SQL para facilitar futuras migraciones o
+              pruebas unitarias.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="marca-sec">
+      <div class="section-eyebrow">10 · Dirección de Arte</div>
+      <h2 class="section-title">Manual de Identidad de Marca</h2>
+      <p class="section-lead">Lineamientos gráficos oficiales establecidos para mantener la coherencia comunicativa de
+        la Red de Apoyo SENA (RAS).</p>
+
+      <h3 style="font-family:'Space Grotesk', sans-serif; margin-bottom:1.5rem; font-size:1.4rem; color:var(--negro);">
+        Paleta de Colores Institucionales</h3>
+
+      <div class="brand-grid">
+        <div class="color-swatch">
+          <div class="color-view" style="background: var(--verde-sena);"></div>
+          <div class="color-info">
+            <h4>Verde SENA</h4>
+            <code>#39A900</code>
+          </div>
+        </div>
+
+        <div class="color-swatch">
+          <div class="color-view" style="background: var(--negro);"></div>
+          <div class="color-info">
+            <h4>Negro Antracita</h4>
+            <code>#1A231A</code>
+          </div>
+        </div>
+
+
+        <div class="color-swatch">
+          <div class="color-view" style="background: var(--gris-claro); border-bottom: 1px solid rgba(0,0,0,0.05);">
+          </div>
+          <div class="color-info">
+            <h4>Fondo Neutro</h4>
+            <code>#F5F7F5</code>
+          </div>
+        </div>
+      </div>
+
+
+      
+        <span class="rs-eyebrow">RAS · Red de Apoyo SENA</span>
+        <h1>Estándares de Codificación</h1>
+        <p class="rs-sub">Convenciones de nomenclatura y estructura derivadas del diccionario de datos y del script SQL
+          del proyecto RAS.</p>
+
+        <!-- 01 -->
+        <h2 class="rs-section-title"><span class="rs-step">01</span> Nomenclatura de tablas</h2>
+        <div class="rs-grid">
+          <div class="diag-card">
+            <div>
+              <div class="diag-icon">🗂️</div>
+              <h3>Formato correcto</h3>
+              <code>Usuario</code>
+              <code>Propuesta_Trueque</code>
+              <code>Historial_Trueque</code>
+            </div>
+            <div class="diag-tag">Singular · PascalCase</div>
+          </div>
+          <div class="diag-card">
+            <div>
+              <div class="diag-icon">🚫</div>
+              <h3>Evitar</h3>
+              <code>usuarios</code>
+              <code>propuestaTrueque</code>
+            </div>
+            <div class="diag-tag rs-warn">Plural / camelCase</div>
+          </div>
+        </div>
+
+        <!-- 02 -->
+        <h2 class="rs-section-title"><span class="rs-step">02</span> Nomenclatura de campos</h2>
+        <div class="rs-note"><strong>Regla base:</strong> snake_case, siempre en minúscula, sin tildes.</div>
+        <table>
+          <tr>
+            <th>Tipo de campo</th>
+            <th>Patrón</th>
+            <th>Ejemplo</th>
+          </tr>
+          <tr>
+            <td>Llave primaria</td>
+            <td><code>id_&lt;entidad&gt;</code></td>
+            <td><code>id_usuario</code></td>
+          </tr>
+          <tr>
+            <td>Llave foránea</td>
+            <td>mismo nombre que la PK referenciada</td>
+            <td><code>id_usuario</code> en Publicacion</td>
+          </tr>
+          <tr>
+            <td>Fecha</td>
+            <td><code>fecha_&lt;accion&gt;</code></td>
+            <td><code>fecha_registro</code></td>
+          </tr>
+          <tr>
+            <td>Booleano</td>
+            <td>afirmativo, nunca negado</td>
+            <td><code>activo_sena</code></td>
+          </tr>
+          <tr>
+            <td>Estado</td>
+            <td><code>estado</code> tipo ENUM</td>
+            <td><code>estado ENUM('activo','suspendido')</code></td>
+          </tr>
+        </table>
+
+        <!-- 03 -->
+        <h2 class="rs-section-title"><span class="rs-step">03</span> Tipos y longitudes estándar</h2>
+        <table>
+          <tr>
+            <th>Campo</th>
+            <th>Tipo</th>
+          </tr>
+          <tr>
+            <td>id_*</td>
+            <td><code>INT</code> — PK/FK, AUTO_INCREMENT en PK</td>
+          </tr>
+          <tr>
+            <td>nombre / apellido</td>
+            <td><code>VARCHAR(100)</code></td>
+          </tr>
+          <tr>
+            <td>correo</td>
+            <td><code>VARCHAR(150)</code></td>
+          </tr>
+          <tr>
+            <td>telefono</td>
+            <td><code>VARCHAR(20)</code></td>
+          </tr>
+          <tr>
+            <td>contrasena_hash</td>
+            <td><code>VARCHAR(255)</code> — nunca texto plano</td>
+          </tr>
+          <tr>
+            <td>descripcion / texto libre</td>
+            <td><code>TEXT</code></td>
+          </tr>
+          <tr>
+            <td>fecha_*</td>
+            <td><code>DATE</code> / <code>DATETIME</code></td>
+          </tr>
+        </table>
+
+        <!-- 04 -->
+        <h2 class="rs-section-title"><span class="rs-step">04</span> Plantilla estándar de tabla</h2>
+        <pre><span class="c">-- TABLA: NombreEntidad</span>
+<span class="k">CREATE TABLE</span> NombreEntidad (
+  id_nombreentidad <span class="k">INT PRIMARY KEY AUTO_INCREMENT</span>,
+  campo_uno        <span class="k">VARCHAR</span>(<span class="s">100</span>) <span class="k">NOT NULL</span>,
+  campo_dos        <span class="k">TEXT</span>,
+  estado           <span class="k">ENUM</span>(<span class="s">'activo'</span>,<span class="s">'inactivo'</span>) <span class="k">DEFAULT</span> <span class="s">'activo'</span>,
+  fecha_creacion   <span class="k">DATETIME DEFAULT NOW()</span>,
+  id_entidad_padre <span class="k">INT</span>,
+  <span class="k">FOREIGN KEY</span> (id_entidad_padre) <span class="k">REFERENCES</span> EntidadPadre(id_entidad_padre)
+);</pre>
+
+        <!-- 05 -->
+        <h2 class="rs-section-title"><span class="rs-step">05</span> Seguridad · RNF03</h2>
+        <div class="rs-grid">
+          <div class="diag-card">
+            <div>
+              <div class="diag-icon">🔒</div>
+              <h3>Correcto</h3>
+              <code>contrasena_hash VARCHAR(255)</code>
+            </div>
+            <div class="diag-tag">Hash bcrypt</div>
+          </div>
+          <div class="diag-card">
+            <div>
+              <div class="diag-icon">⚠️</div>
+              <h3>Incorrecto</h3>
+              <code>contrasena VARCHAR(50)</code>
+            </div>
+            <div class="diag-tag rs-warn">Texto plano</div>
+          </div>
+        </div>
+
+        <!-- 06 -->
+        <h2 class="rs-section-title"><span class="rs-step">06</span> Mantenibilidad · RNF07</h2>
+        <div class="rs-grid">
+          <div class="diag-card">
+            <div>
+              <div class="diag-icon">🧩</div>
+              <h3>Tablas principales</h3>
+              <p>Usuario, Rol, Publicacion, Categoria.</p>
+            </div>
+            <div class="diag-tag">Núcleo</div>
+          </div>
+          <div class="diag-card">
+            <div>
+              <div class="diag-icon">🔁</div>
+              <h3>Tablas de interacción</h3>
+              <p>Propuesta_Trueque, Mensaje, Calificacion.</p>
+            </div>
+            <div class="diag-tag">Interacción</div>
+          </div>
+          <div class="diag-card">
+            <div>
+              <div class="diag-icon">🗃️</div>
+              <h3>Tablas de soporte</h3>
+              <p>Notificacion, Evidencia, PQR, Historial_Trueque.</p>
+            </div>
+            <div class="diag-tag">Soporte</div>
+          </div>
+        </div>
+
+        <!-- 07 -->
+        <h2 class="rs-section-title"><span class="rs-step">07</span> Referencia a requerimientos en el código</h2>
+        <table>
+          <tr>
+            <th>Prefijo</th>
+            <th>Significado</th>
+            <th>Rango</th>
+          </tr>
+          <tr>
+            <td><code>RFxx</code></td>
+            <td>Requerimiento Funcional</td>
+            <td>RF01–RF14</td>
+          </tr>
+          <tr>
+            <td><code>RNFxx</code></td>
+            <td>Requerimiento No Funcional</td>
+            <td>RNF01–RNF08</td>
+          </tr>
+        </table>
+        <pre><span class="c">// RF06 - Sistema de propuestas de trueque</span>
+<span class="k">function</span> enviarPropuestaTrueque(idPublicacion, idUsuario) { ... }</pre>
+
+      </section>
+
+
+      <section id="metodologia">
+        <div class="section-eyebrow">09 · Gestión de Ingeniería</div>
+        <h2 class="section-title">Marco de Trabajo: Scrum</h2>
+        <p class="section-lead">El ciclo de vida de la plataforma RAS se gestiona bajo ingeniería de software ágil,
+          traduciendo los requerimientos del Backlog en incrementos de software iterativos y funcionales.</p>
+
+        <div class="tabs">
+          <button class="tab-btn active" onclick="switchTab('rf')">Roles y Responsabilidades</button>
+          <button class="tab-btn" onclick="switchTab('rnf')">Planificación de Sprints (Backlog)</button>
+        </div>
+
+        <div id="panel-rf" class="tab-panel active">
+          <div class="rf-grid">
+            <div class="rf-card">
+              <div class="rf-header">
+                <span class="rf-id">PO</span>
+                <span class="rf-name">Product Owner</span>
+              </div>
+              <p class="rf-desc"><strong>Responsable:</strong> Johan Gonzalo García Walteros.<br>Encargado de maximizar
+                el valor del producto. Define, refina y prioriza los requerimientos en historias del Product Backlog,
+                asegurando que la solución se alinee con las necesidades solidarias de los aprendices y de la
+                institución.</p>
+              <span class="rf-priority alta">Líder Backlog</span>
+            </div>
+
+            <div class="rf-card">
+              <div class="rf-header">
+                <span class="rf-id">SM</span>
+                <span class="rf-name">Scrum Master</span>
+              </div>
+              <p class="rf-desc"><strong>Responsable:</strong> Nikol Vannesa Castañeda Carrillo.<br>Facilitadora del
+                marco ágil. Remueve bloqueos o impedimentos técnicos y organizacionales, protege la concentración del
+                equipo y modera las ceremonias clave (Planning, Daily, Review y Retrospective).</p>
+              <span class="rf-priority alta">Facilitador</span>
+            </div>
+
+            <div class="rf-card">
+              <div class="rf-header">
+                <span class="rf-id">DEV</span>
+                <span class="rf-name">Development Team</span>
+              </div>
+              <p class="rf-desc"><strong>Integrantes:</strong> Johan García y Nikol Castañeda.<br>Célula
+                multidisciplinar encargada del diseño técnico, modelado de bases de datos, codificación de APIs REST,
+                maquetación de interfaces web/móviles y ejecución del plan de pruebas integrales.</p>
+              <span class="rf-priority alta">Célula Ejecutora</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="panel-rnf" class="tab-panel">
+          <div class="rf-grid">
+            <div class="rf-card">
+              <div class="rf-header">
+                <span class="rf-id rnf">S01</span>
+                <span class="rf-name">Sprint 1: Núcleo y Acceso Seguro</span>
+              </div>
+              <p class="rf-desc">Desarrollo de las bases lógicas y autenticación cifrada. Incluye el registro completo
+                por número de cédula o correo institucional Mi SENA, control seguro de inicio de sesión y el módulo
+                interactivo de gestión del perfil del aprendiz.</p>
+              <span class="rf-priority media">RF01 · RF02 · RF03</span>
+            </div>
+
+            <div class="rf-card">
+              <div class="rf-header">
+                <span class="rf-id rnf">S02</span>
+                <span class="rf-name">Sprint 2: Motor del Trueque</span>
+              </div>
+              <p class="rf-desc">Construcción del espacio central transaccional. Permite la publicación detallada de
+                insumos académicos (uniformes, libros, computadores) adjuntando fotos, estructuración del buscador
+                parametrizado y control de ofertas de intercambio.</p>
+              <span class="rf-priority media">RF04 · RF05 · RF06</span>
+            </div>
+
+            <div class="rf-card">
+              <div class="rf-header">
+                <span class="rf-id rnf">S03</span>
+                <span class="rf-name">Sprint 3: Módulos Colaborativos</span>
+              </div>
+              <p class="rf-desc">Habilitación de las capas de comunicación e interacción en tiempo real. Programación
+                del chat interno de negociación para acordar entregas presenciales, sistema automatizado de
+                notificaciones vía correo electrónico y de reputación.</p>
+              <span class="rf-priority media">RF07 · RF08 · RF09</span>
+            </div>
+
+            <div class="rf-card">
+              <div class="rf-header">
+                <span class="rf-id rnf">S04</span>
+                <span class="rf-name">Sprint 4: Soporte y Control</span>
+              </div>
+              <p class="rf-desc">Consolidación de auditoría y trazabilidad. Integración de geolocalización de sedes,
+                carga obligatoria de evidencias fotográficas del recurso recibido para la supervisión del SENA,
+                descargas de historiales en formato PDF y PQRs.</p>
+              <span class="rf-priority media">RF10 a RF14</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p><strong>RAS — Red de Apoyo SENA</strong></p>
+        <p>Johan Gonzalo García Walteros · Nikol Vannesa Castañeda Carrillo</p>
+        <p>Instructores : Belman marin , Andres Chavez · Programa Análisis y Desarrollo de Software · SENA 2025–2026</p>
+        <p style="margin-top:0.75rem; font-size:0.72rem; opacity:0.4;">Presentación Final de Trimestre · Inicio Quinto
+          Trimestre</p>
+      </footer>
+
+      <script src="java/java.js"></script>
+</body>
+
+</html>
